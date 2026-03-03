@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = '/api';
+const BASE = 'https://car-rental-bqt8.onrender.com/api/';
 const getToken = () => localStorage.getItem('token');
 
 const client = axios.create({
