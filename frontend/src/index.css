@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dusk-blue: #3d5a80;
+  --powder-blue: #98c1d9;
+  --light-cyan: #e0fbfc;
+  --burnt-peach: #ee6c4d;
+  --jet-black: #293241;
+}
+
+body {
+  @apply bg-slate-50 text-jet-black antialiased;
+}
+
+/* Slightly warmer off-white for main content areas */
+.bg-page {
+  @apply bg-[#f0f7fa];
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  @apply outline-none ring-2 ring-dusk-blue/40 ring-offset-1 border-dusk-blue/60;
+}
+
+/* Carousel fade */
+.carousel-fade {
+  animation: carouselFade 0.5s ease-out;
+}
+@keyframes carouselFade {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
